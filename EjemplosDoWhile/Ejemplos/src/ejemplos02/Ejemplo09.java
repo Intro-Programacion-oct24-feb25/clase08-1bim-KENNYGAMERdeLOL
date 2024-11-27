@@ -31,17 +31,26 @@ public class Ejemplo09 {
         boolean bandera = true;
         int suma = 0;
         int contador_calificaciones = 0;
+       
         
         cadenaFinal = "Listado de Notas\n";
         
         do {
-            
+             
+        System.out.println("Ingrese el nombre del estudiante ");
+        nombre = entrada.nextLine();
+         System.out.println("Ingrese calificaciomn solo valores enteros: ");
+        nota = entrada.nextInt();
             
             // agrego valor al acumulador
             suma = suma + nota;
             // agrego una unidad al contador para luego sacar el promedio
             contador_calificaciones = contador_calificaciones + 1;
             
+            cadenaFinal = String.format("%sCalificacion: %d del estudiante %s \n",
+            cadenaFinal,
+            nota,
+            nombre.toLowerCase());
             
             System.out.println("Ingrese (-111) si desea salir del ciclo; "
                     + "cualquier otro número para continuar");
