@@ -32,6 +32,7 @@ public class Ejemplo06 {
         int operacion;
         int contador = 1;
         int limite;
+        String cadena = "";
         
         System.out.println("Ingrese la tabla:");
         tabla = entrada.nextInt();
@@ -44,6 +45,6 @@ public class Ejemplo06 {
                   
             contador = contador + 1;
         } while (contador <= limite);
-
+System.out.println(cadena);
     }
 }
